@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f0f8ff; /* Light sky blue */
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Main Container */
+.container {
+    padding-top: 60px; /* Space for the fixed navbar */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+#points-display {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-top: 10px;
+}
+
+/* Controls */
+.controls {
+    text-align: center;
+    margin: 20px;
+}
+
+.control-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.control-button:hover {
+    background-color: #45a049;
+}
+
+/* Map Container */
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+#mapCanvas {
+    width: 100%;
+    height: 100%;
+    background: url('world-map.png') no-repeat center center; /* Add world map image */
+    background-size: cover;
+    border: 2px solid #333;
+}
+
+#confettiCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}

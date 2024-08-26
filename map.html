@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant a Tree</title>
+    <link rel="stylesheet" href="map.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="mystats.html" class="nav-link">My Stats</a>
+        <a href="swarm.html" class="nav-link">Swarm</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="map.html" class="nav-link">Map</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <header>
+            <h1>Plant a Tree</h1>
+            <div id="points-display">Points: 200</div>
+        </header>
+        <main>
+            <div class="controls">
+                <button id="plantSaplingBtn" class="control-button">Plant Sapling (2 points)</button>
+                <button id="plantTreeBtn" class="control-button">Plant Tree (10 points)</button>
+            </div>
+            <div class="map-container">
+                <canvas id="mapCanvas"></canvas>
+                <canvas id="confettiCanvas"></canvas>
+            </div>
+        </main>
+    </div>
+    <script src="map.js"></script>
+</body>
+</html>
