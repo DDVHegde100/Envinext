@@ -3,28 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EnviroNest</title>
+    <title>Envinext - Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="stats.html">My Stats</a></li>
-                <li><a href="campaigns.html">Campaigns</a></li>
-                <li><a href="eco-game.html">Eco Game</a></li>
-                <li><a href="shop.html">Eco Shop</a></li>
-                <li><a href="map.html">Plant a Tree</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <h1>Welcome to Envinext</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="stats.html">My Stats</a></li>
+                    <li><a href="campaigns.html">Campaigns</a></li>
+                    <li><a href="eco-game.html">Eco Game</a></li>
+                    <li><a href="shop.html">Eco Shop</a></li>
+                    <li><a href="map.html">Plant a Tree</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+    
     <main>
-        <h1>Welcome to EnviroNest</h1>
-        <p>Explore our features and contribute to a greener planet.</p>
+        <section class="content-section">
+            <div class="content-left">
+                <img src="https://via.placeholder.com/300x200" alt="Eco-friendly gif">
+            </div>
+            <div class="content-right">
+                <h2>Join the Green Movement</h2>
+                <p>Envinext is your gateway to contributing to a healthier planet. Track your environmental impact, participate in eco-friendly campaigns, and more.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="content-left">
+                <h2>Interactive Eco Game</h2>
+                <p>Engage your kids with our fun and educational eco game, teaching them the importance of recycling and sustainable living.</p>
+            </div>
+            <div class="content-right">
+                <img src="https://via.placeholder.com/300x200" alt="Eco game gif">
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="content-left">
+                <img src="https://via.placeholder.com/300x200" alt="Planting trees gif">
+            </div>
+            <div class="content-right">
+                <h2>Plant Virtual Trees</h2>
+                <p>Earn points and plant virtual trees on a global map. Watch your impact grow as you contribute to reforestation efforts.</p>
+            </div>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2024 EnviroNest. All rights reserved.</p>
+        <p>&copy; 2024 Envinext. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Sticky header functionality
+        window.onscroll = function() {stickyHeader()};
+
+        var header = document.querySelector("header");
+        var sticky = header.offsetTop;
+
+        function stickyHeader() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 </html>
