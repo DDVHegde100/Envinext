@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Envinext - Home</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="header-content">
-            <h1>Welcome to Envinext</h1>
+            <h1>Envinext</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -22,35 +22,49 @@
             </nav>
         </div>
     </header>
-    
+
     <main>
-        <section class="content-section">
-            <div class="content-left">
-                <img src="https://via.placeholder.com/300x200" alt="Eco-friendly gif">
+        <section class="hero">
+            <div class="hero-text">
+                <h2>Make a Difference</h2>
+                <p>Join Envinext to track your environmental impact and contribute to a greener planet.</p>
+                <a href="campaigns.html" class="cta-button">Get Started</a>
             </div>
-            <div class="content-right">
-                <h2>Join the Green Movement</h2>
-                <p>Envinext is your gateway to contributing to a healthier planet. Track your environmental impact, participate in eco-friendly campaigns, and more.</p>
-            </div>
-        </section>
-
-        <section class="content-section">
-            <div class="content-left">
-                <h2>Interactive Eco Game</h2>
-                <p>Engage your kids with our fun and educational eco game, teaching them the importance of recycling and sustainable living.</p>
-            </div>
-            <div class="content-right">
-                <img src="https://via.placeholder.com/300x200" alt="Eco game gif">
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/800x600" alt="Hero Image">
             </div>
         </section>
 
-        <section class="content-section">
-            <div class="content-left">
-                <img src="https://via.placeholder.com/300x200" alt="Planting trees gif">
+        <section class="feature">
+            <div class="feature-text">
+                <h3>Engage with Our Eco Game</h3>
+                <p>Fun and educational games for kids that teach the importance of sustainability.</p>
+                <a href="eco-game.html" class="cta-button">Play Now</a>
             </div>
-            <div class="content-right">
-                <h2>Plant Virtual Trees</h2>
-                <p>Earn points and plant virtual trees on a global map. Watch your impact grow as you contribute to reforestation efforts.</p>
+            <div class="feature-image">
+                <img src="https://via.placeholder.com/400x300" alt="Eco Game Image">
+            </div>
+        </section>
+
+        <section class="feature">
+            <div class="feature-text">
+                <h3>Shop Eco-friendly Products</h3>
+                <p>Discover products that help you live a more sustainable lifestyle.</p>
+                <a href="shop.html" class="cta-button">Explore Shop</a>
+            </div>
+            <div class="feature-image">
+                <img src="https://via.placeholder.com/400x300" alt="Eco Shop Image">
+            </div>
+        </section>
+
+        <section class="feature">
+            <div class="feature-text">
+                <h3>Plant Virtual Trees</h3>
+                <p>Earn points and plant virtual trees on our global map. Watch your impact grow!</p>
+                <a href="map.html" class="cta-button">Start Planting</a>
+            </div>
+            <div class="feature-image">
+                <img src="https://via.placeholder.com/400x300" alt="Virtual Trees Image">
             </div>
         </section>
     </main>
@@ -58,21 +72,5 @@
     <footer>
         <p>&copy; 2024 Envinext. All rights reserved.</p>
     </footer>
-
-    <script>
-        // Sticky header functionality
-        window.onscroll = function() {stickyHeader()};
-
-        var header = document.querySelector("header");
-        var sticky = header.offsetTop;
-
-        function stickyHeader() {
-            if (window.pageYOffset > sticky) {
-                header.classList.add("sticky");
-            } else {
-                header.classList.remove("sticky");
-            }
-        }
-    </script>
 </body>
 </html>
