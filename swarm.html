@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swarm Simulation Tool</title>
+    <link rel="stylesheet" href="swarm.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="stats.html" class="nav-link">My Stats</a>
+        <a href="campaign.html" class="nav-link">Campaigns</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <header>
+            <h1>Swarm Simulation Tool</h1>
+        </header>
+        <main>
+            <div class="canvas-container">
+                <canvas id="swarmCanvas"></canvas>
+            </div>
+            <div class="controls">
+                <div class="button-group">
+                    <button id="addRobotBtn" class="control-button">Add Robots</button>
+                    <button id="addObstacleBtn" class="control-button">Add Obstacle</button>
+                    <button id="randomObstacleBtn" class="control-button">Random Obstacle</button>
+                    <label for="modeSelect" class="mode-label">Simulation Mode:</label>
+                    <select id="modeSelect" class="control-button mode-select">
+                        <option value="flocking">Flocking</option>
+                        <option value="avoidance">Obstacle Avoidance</option>
+                        <option value="predatory">Predatory</option>
+                        <option value="formation">Formation Flying</option>
+                        <option value="chaotic">Chaotic Movement</option>
+                    </select>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="swarm.js"></script>
+</body>
+</html>
